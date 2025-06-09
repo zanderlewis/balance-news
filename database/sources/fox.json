@@ -1,0 +1,77 @@
+{
+    "name": "Fox News",
+    "slug": "fox",
+    "url": "https://www.foxnews.com",
+    "bias_label": "right",
+    "country_code": "US",
+    "categories": [
+        "general",
+        "health",
+        "lifestyle",
+        "national",
+        "opinion",
+        "politics",
+        "science",
+        "sports",
+        "technology",
+        "world"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "Latest News",
+            "url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+            "category": "general"
+        },
+        {
+            "name": "World",
+            "url": "https://moxie.foxnews.com/google-publisher/world.xml",
+            "category": "world"
+        },
+        {
+            "name": "Politics",
+            "url": "https://moxie.foxnews.com/google-publisher/politics.xml",
+            "category": "politics"
+        },
+        {
+            "name": "Science",
+            "url": "https://moxie.foxnews.com/google-publisher/science.xml",
+            "category": "science"
+        },
+        {
+            "name": "Health",
+            "url": "https://moxie.foxnews.com/google-publisher/health.xml",
+            "category": "health"
+        },
+        {
+            "name": "Sports",
+            "url": "https://moxie.foxnews.com/google-publisher/sports.xml",
+            "category": "sports"
+        },
+        {
+            "name": "Travel",
+            "url": "https://moxie.foxnews.com/google-publisher/travel.xml",
+            "category": "lifestyle"
+        },
+        {
+            "name": "Tech",
+            "url": "https://moxie.foxnews.com/google-publisher/tech.xml",
+            "category": "technology"
+        },
+        {
+            "name": "Opinion",
+            "url": "https://moxie.foxnews.com/google-publisher/opinion.xml",
+            "category": "opinion"
+        },
+        {
+            "name": "Google Publisher",
+            "url": "https://moxie.foxnews.com/google-publisher/us.xml",
+            "category": "national"
+        },
+        {
+            "name": "World",
+            "url": "https://moxie.foxnews.com/google-publisher/world.xml",
+            "category": "world"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "PBS",
+    "slug": "pbs",
+    "url": "https://pbs.com",
+    "bias_label": "lean-left",
+    "country_code": "US",
+    "categories": [
+        "general",
+        "politics"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "Politics",
+            "url": "https://www.pbs.org/newshour/feeds/rss/politics",
+            "category": "politics"
+        },
+        {
+            "name": "Brooks and Capehart",
+            "url": "https://www.pbs.org/newshour/feeds/rss/brooks-and-capehart",
+            "category": "general"
+        },
+        {
+            "name": "Headlines",
+            "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+            "category": "general"
+        }
+    ]
+}

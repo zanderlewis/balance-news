@@ -1,0 +1,98 @@
+{
+    "name": "ABC News",
+    "slug": "abcnews",
+    "url": "https://abcnews.go.com",
+    "bias_label": "lean-left",
+    "country_code": "US",
+    "categories": [
+        "arts",
+        "business",
+        "general",
+        "health",
+        "technology",
+        "world"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "Top Stories",
+            "url": "http://feeds.abcnews.com/abcnews/topstories",
+            "category": "general"
+        },
+        {
+            "name": "US Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/usheadlines",
+            "category": "general"
+        },
+        {
+            "name": "International Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/internationalheadlines",
+            "category": "world"
+        },
+        {
+            "name": "Politics Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/politicsheadlines",
+            "category": "general"
+        },
+        {
+            "name": "Money Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/moneyheadlines",
+            "category": "business"
+        },
+        {
+            "name": "Technology Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/technologyheadlines",
+            "category": "technology"
+        },
+        {
+            "name": "Health Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/healthheadlines",
+            "category": "health"
+        },
+        {
+            "name": "Entertainment Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/entertainmentheadlines",
+            "category": "arts"
+        },
+        {
+            "name": "Travel Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/travelheadlines",
+            "category": "general"
+        },
+        {
+            "name": "Sports Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/sportsheadlines",
+            "category": "general"
+        },
+        {
+            "name": "World News Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/worldnewsheadlines",
+            "category": "general"
+        },
+        {
+            "name": "GMA Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/gmaheadlines",
+            "category": "general"
+        },
+        {
+            "name": "20/20 Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/2020headlines",
+            "category": "general"
+        },
+        {
+            "name": "Primetime Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/primetimeheadlines",
+            "category": "general"
+        },
+        {
+            "name": "Nightline Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/nightlineheadlines",
+            "category": "general"
+        },
+        {
+            "name": "This Week Headlines",
+            "url": "https://feeds.abcnews.com/abcnews/thisweekheadlines",
+            "category": "general"
+        }
+    ]
+}

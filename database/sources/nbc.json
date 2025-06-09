@@ -1,0 +1,24 @@
+{
+    "name": "NBC News",
+    "slug": "nbc",
+    "url": "https://www.nbcnews.com",
+    "bias_label": "lean-left",
+    "country_code": "US",
+    "categories": [
+        "general",
+        "world"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "World",
+            "url": "https://feeds.nbcnews.com/nbcnews/public/world",
+            "category": "world"
+        },
+        {
+            "name": "News",
+            "url": "https://feeds.nbcnews.com/nbcnews/public/news",
+            "category": "general"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "name": "United Nations News",
+    "slug": "un",
+    "url": "https://news.un.org",
+    "bias_label": "center",
+    "country_code": "US",
+    "categories": [
+        "business",
+        "education",
+        "general",
+        "health",
+        "politics",
+        "science",
+        "social",
+        "world"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "All News",
+            "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+            "category": "general"
+        },
+        {
+            "name": "Middle East",
+            "url": "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Africa",
+            "url": "https://news.un.org/feed/subscribe/en/news/region/africa/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Europe",
+            "url": "https://news.un.org/feed/subscribe/en/news/region/europe/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Americas",
+            "url": "https://news.un.org/feed/subscribe/en/news/region/americas/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Asia Pacific",
+            "url": "https://news.un.org/feed/subscribe/en/news/region/asia-pacific/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Health",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
+            "category": "health"
+        },
+        {
+            "name": "UN Affairs",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/un-affairs/feed/rss.xml",
+            "category": "politics"
+        },
+        {
+            "name": "Law and Crime Prevention",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/law-and-crime-prevention/feed/rss.xml",
+            "category": "politics"
+        },
+        {
+            "name": "Human Rights",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/human-rights/feed/rss.xml",
+            "category": "social"
+        },
+        {
+            "name": "Humanitarian Aid",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/humanitarian-aid/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Climate Change",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
+            "category": "science"
+        },
+        {
+            "name": "Culture and Education",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/culture-and-education/feed/rss.xml",
+            "category": "education"
+        },
+        {
+            "name": "Economic Development",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/economic-development/feed/rss.xml",
+            "category": "business"
+        },
+        {
+            "name": "Women",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/women/feed/rss.xml",
+            "category": "social"
+        },
+        {
+            "name": "Peace and Security",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml",
+            "category": "politics"
+        },
+        {
+            "name": "Migrants and Refugees",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/migrants-and-refugees/feed/rss.xml",
+            "category": "world"
+        },
+        {
+            "name": "Sustainable Development Goals",
+            "url": "https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml",
+            "category": "politics"
+        }
+    ]
+}

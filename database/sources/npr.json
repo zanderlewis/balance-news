@@ -1,0 +1,23 @@
+{
+    "name": "NPR",
+    "slug": "npr",
+    "url": "https://npr.com",
+    "bias_label": "lean-left",
+    "country_code": "US",
+    "categories": [
+        "general"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "World News",
+            "url": "https://feeds.npr.org/1004/rss.xml",
+            "category": "general"
+        },
+        {
+            "name": "National News",
+            "url": "https://feeds.npr.org/1003/rss.xml",
+            "category": "general"
+        }
+    ]
+}

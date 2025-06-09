@@ -1,0 +1,18 @@
+{
+    "name": "New Yorker",
+    "slug": "newyorker",
+    "url": "https://newyorker.com",
+    "bias_label": "left",
+    "country_code": "US",
+    "categories": [
+        "general"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "News",
+            "url": "https://www.newyorker.com/feed/news",
+            "category": "general"
+        }
+    ]
+}
