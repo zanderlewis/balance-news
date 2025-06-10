@@ -143,9 +143,11 @@ abstract class BaseNews extends Component
         }
 
         // Get bias distribution from all articles in current query
-        $query = $this->getArticlesQuery();
+        // Clone the query and remove ORDER BY to avoid GROUP BY conflicts
+        $query = clone $this->getArticlesQuery();
         
-        $biasData = $query->join('news_sources', 'articles.news_source_id', '=', 'news_sources.id')
+        $biasData = $query->reorder() // Remove existing ORDER BY clauses
+            ->join('news_sources', 'articles.news_source_id', '=', 'news_sources.id')
             ->selectRaw('news_sources.bias_label, COUNT(*) as count')
             ->groupBy('news_sources.bias_label')
             ->pluck('count', 'bias_label')
