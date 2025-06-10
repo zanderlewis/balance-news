@@ -5,12 +5,15 @@ use Illuminate\Support\Facades\Auth;
 use Livewire\Volt\Volt;
 
 use App\Livewire\Home;
+use App\Livewire\News;
 
 Route::get('/', function () {
     return auth()->check() 
         ? redirect()->route('home') 
         : view('welcome');
 });
+
+Route::get('/news', News::class)->name('news');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', Home::class)->name('home');

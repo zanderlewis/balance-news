@@ -2,7 +2,7 @@
     "name": "United Nations News",
     "slug": "un",
     "url": "https://news.un.org",
-    "bias_label": "center",
+    "bias_label": "lean-left",
     "country_code": "US",
     "categories": [
         "business",

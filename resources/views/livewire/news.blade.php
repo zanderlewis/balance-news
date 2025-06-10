@@ -9,7 +9,7 @@
         :selectedBias="$selectedBias"
         :selectedSource="$selectedSource"
         :selectedTimeRange="$selectedTimeRange"
-        :showHeader="true"
+        :showHeader="false"
         headerTitle="Latest News Stories"
         headerSubtitle="Search and filter articles by bias, source, and time range"
     />

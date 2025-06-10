@@ -25,6 +25,7 @@
                         />
                         <flux:menu class="w-[220px]">
                             <flux:menu.item :href="route('home')" icon="home" wire:navigate>Home</flux:menu.item>
+                            <flux:menu.item :href="route('news')" icon="newspaper" wire:navigate>News</flux:menu.item>
                             <flux:menu.item :href="route('settings.profile')" icon="cog" wire:navigate>Settings</flux:menu.item>
                             <flux:menu.separator />
                             <form method="POST" action="{{ route('logout') }}" class="w-full">
@@ -38,6 +39,9 @@
                 </div>
             @else
                 <div class="flex items-center gap-4">
+                    <flux:button href="{{ route('news') }}" variant="ghost" wire:navigate>
+                        News
+                    </flux:button>
                     <flux:button href="{{ route('login') }}" variant="ghost" wire:navigate>
                         Sign In
                     </flux:button>
@@ -67,7 +71,10 @@
                             <flux:button href="{{ route('register') }}" variant="primary" class="w-full sm:w-auto px-8 py-3 text-lg">
                                 Start Reading Balanced News
                             </flux:button>
-                            <flux:button href="{{ route('login') }}" variant="outline" class="w-full sm:w-auto px-8 py-3 text-lg">
+                            <flux:button href="{{ route('news') }}" variant="outline" class="w-full sm:w-auto px-8 py-3 text-lg" wire:navigate>
+                                Browse News
+                            </flux:button>
+                            <flux:button href="{{ route('login') }}" variant="ghost" class="w-full sm:w-auto px-8 py-3 text-lg">
                                 Sign In
                             </flux:button>
                         </div>

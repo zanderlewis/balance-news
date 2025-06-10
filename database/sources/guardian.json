@@ -2,7 +2,7 @@
     "name": "The Guardian",
     "slug": "guardian",
     "url": "https://www.theguardian.com",
-    "bias_label": "left",
+    "bias_label": "lean-left",
     "country_code": "US",
     "categories": [
         "general"
