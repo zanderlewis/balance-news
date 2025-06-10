@@ -1,0 +1,92 @@
+{
+    "name": "Associated Press",
+    "slug": "associated-press",
+    "url": "https://associated-press.com",
+    "bias_label": "center",
+    "country_code": "US",
+    "categories": [
+        "arts",
+        "business",
+        "general",
+        "health",
+        "lifestyle",
+        "politics",
+        "science",
+        "sports",
+        "technology",
+        "world"
+    ],
+    "is_active": true,
+    "rss_feeds": [
+        {
+            "name": "Business",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/business.xml",
+            "category": "business"
+        },
+        {
+            "name": "Climate and Environment",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/climate-and-environment.xml",
+            "category": "science"
+        },
+        {
+            "name": "Entertainment",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/entertainment.xml",
+            "category": "arts"
+        },
+        {
+            "name": "Health",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/health.xml",
+            "category": "health"
+        },
+        {
+            "name": "Lifestyle",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/lifestyle.xml",
+            "category": "lifestyle"
+        },
+        {
+            "name": "Oddities",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/oddities.xml",
+            "category": "general"
+        },
+        {
+            "name": "Politics",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/politics.xml",
+            "category": "politics"
+        },
+        {
+            "name": "Religion",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/religion.xml",
+            "category": "general"
+        },
+        {
+            "name": "Science",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/science.xml",
+            "category": "science"
+        },
+        {
+            "name": "Sports",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/sports.xml",
+            "category": "sports"
+        },
+        {
+            "name": "Technology",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/technology.xml",
+            "category": "technology"
+        },
+        {
+            "name": "Travel",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/travel.xml",
+            "category": "lifestyle"
+        },
+        {
+            "name": "Us News",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/us-news.xml",
+            "category": "general"
+        },
+        {
+            "name": "World News",
+            "url": "http://associated-press.s3-website-us-east-1.amazonaws.com/world-news.xml",
+            "category": "world"
+        }
+    ]
+}
