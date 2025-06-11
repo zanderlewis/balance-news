@@ -72,11 +72,28 @@ class User extends Authenticatable
     }
 
     /**
+     * Get the user's bookmarked news sources
+     */
+    public function sourceBookmarks()
+    {
+        return $this->belongsToMany(NewsSource::class, 'user_source_bookmarks')
+                    ->withTimestamps();
+    }
+
+    /**
      * Check if user has bookmarked an article
      */
     public function hasBookmarked($articleId): bool
     {
         return $this->bookmarks()->where('article_id', $articleId)->exists();
+    }
+
+    /**
+     * Check if user has bookmarked a news source
+     */
+    public function hasBookmarkedSource($sourceId): bool
+    {
+        return $this->sourceBookmarks()->where('news_source_id', $sourceId)->exists();
     }
 
     /**

@@ -7,6 +7,8 @@ use Livewire\WithPagination;
 use App\Models\Article;
 use App\Models\NewsSource;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 abstract class BaseNews extends Component
 {
@@ -180,12 +182,40 @@ abstract class BaseNews extends Component
     {
         $articles = $this->getArticlesQuery()->paginate(20);
         
+        // Get bookmarked article IDs for the current user
+        $bookmarkedIds = [];
+        if (Auth::check()) {
+            $user = Auth::user();
+            
+            // Get the article IDs from the pivot table directly
+            $bookmarkedIds = DB::table('user_bookmarks')
+                ->where('user_id', $user->id)
+                ->pluck('article_id')
+                ->toArray();
+        }
+        
         return [
             'articles' => $articles,
             'biasOptions' => $this->getBiasOptions(),
             'sourceOptions' => NewsSource::orderBy('name')->get(),
             'timeRangeOptions' => $this->getTimeRangeOptions(),
             'biasDistribution' => $this->getBiasDistribution($articles),
+            'bookmarkedIds' => $bookmarkedIds,
         ];
+    }
+
+    public function toggleBookmark($articleId)
+    {
+        if (!Auth::check()) {
+            return;
+        }
+
+        $user = Auth::user();
+        
+        if ($user->hasBookmarked($articleId)) {
+            $user->bookmarks()->detach($articleId);
+        } else {
+            $user->bookmarks()->attach($articleId);
+        }
     }
 }

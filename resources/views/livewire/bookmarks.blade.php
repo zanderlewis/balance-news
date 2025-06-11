@@ -11,7 +11,7 @@
         :selectedSource="$selectedSource"
         :selectedTimeRange="$selectedTimeRange"
         :showHeader="true"
-        headerTitle="Latest News Stories"
-        headerSubtitle="Search and filter articles by bias, source, and time range"
+        headerTitle="Your Bookmarked Articles"
+        headerSubtitle="Manage and explore your saved articles"
     />
 </div>

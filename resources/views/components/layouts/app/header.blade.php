@@ -101,6 +101,15 @@
                     <flux:navlist.item icon="layout-grid" :href="route('home')" :current="request()->routeIs('home')" wire:navigate>
                     {{ __('Home') }}
                     </flux:navlist.item>
+                    <flux:navlist.item icon="bookmark" :href="route('bookmarks')" :current="request()->routeIs('bookmarks')" wire:navigate>
+                    {{ __('Bookmarks') }}
+                    </flux:navlist.item>
+                    <flux:navlist.item icon="building-library" :href="route('sources')" :current="request()->routeIs('sources')" wire:navigate>
+                    {{ __('Sources') }}
+                    </flux:navlist.item>
+                    <flux:navlist.item icon="star" :href="route('bookmarked-sources')" :current="request()->routeIs('bookmarked-sources')" wire:navigate>
+                    {{ __('My Sources') }}
+                    </flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 

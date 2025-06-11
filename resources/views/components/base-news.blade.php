@@ -1,4 +1,4 @@
-@props(['articles', 'biasOptions', 'sourceOptions', 'timeRangeOptions', 'biasDistribution', 'search', 'selectedBias', 'selectedSource', 'selectedTimeRange', 'showHeader' => true, 'headerTitle' => 'Latest News Stories', 'headerSubtitle' => 'Search and filter articles by bias, source, and time range'])
+@props(['articles', 'biasOptions', 'sourceOptions', 'timeRangeOptions', 'biasDistribution', 'bookmarkedIds' => [], 'search', 'selectedBias', 'selectedSource', 'selectedTimeRange', 'showHeader' => true, 'headerTitle' => 'Latest News Stories', 'headerSubtitle' => 'Search and filter articles by bias, source, and time range'])
 
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     @if($showHeader)
@@ -193,8 +193,12 @@
         
     <!-- Articles -->
     <div class="space-y-6">
-        @forelse($articles as $article)
-            <x-article-card :article="$article" />
+         @forelse($articles as $article)
+            <x-article-card 
+                :article="$article" 
+                :isBookmarked="in_array($article->id, $bookmarkedIds ?? [])"
+                :bookmarkedIds="$bookmarkedIds ?? []"
+            />
         @empty
             <div class="text-center py-16">
                 <flux:icon name="document-text" class="w-16 h-16 mx-auto text-zinc-400 dark:text-zinc-600 mb-4" />

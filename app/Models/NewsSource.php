@@ -53,6 +53,15 @@ class NewsSource extends Model
     }
 
     /**
+     * Get users who bookmarked this news source
+     */
+    public function bookmarkedBy()
+    {
+        return $this->belongsToMany(User::class, 'user_source_bookmarks')
+                    ->withTimestamps();
+    }
+
+    /**
      * Get bias color for UI display
      */
     public function getBiasColor(): string

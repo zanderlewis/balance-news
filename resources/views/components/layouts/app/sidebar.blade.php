@@ -15,8 +15,12 @@
                 <flux:navlist.group heading="Navigation" class="grid">
                     @auth
                         <flux:navlist.item icon="home" :href="route('home')" :current="request()->routeIs('home')" wire:navigate>Home</flux:navlist.item>
-                    @endauth
+                        <flux:navlist.item icon="bookmark" :href="route('bookmarks')" :current="request()->routeIs('bookmarks')" wire:navigate>Bookmarks</flux:navlist.item>
+                        <flux:navlist.item icon="building-library" :href="route('sources')" :current="request()->routeIs('sources')" wire:navigate>Sources</flux:navlist.item>
+                        <flux:navlist.item icon="star" :href="route('bookmarked-sources')" :current="request()->routeIs('bookmarked-sources')" wire:navigate>My Sources</flux:navlist.item>
+                    @else
                     <flux:navlist.item icon="newspaper" :href="route('news')" :current="request()->routeIs('news')" wire:navigate>News</flux:navlist.item>
+                    @endauth
                 </flux:navlist.group>
             </flux:navlist>
 
