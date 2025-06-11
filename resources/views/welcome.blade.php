@@ -183,9 +183,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-zinc-900 dark:text-white mb-3">Daily Updates</h3>
+                        <h3 class="text-xl font-semibold text-zinc-900 dark:text-white mb-3">Hourly Updates</h3>
                         <p class="text-zinc-600 dark:text-zinc-300">
-                            Stay informed with the latest news from trusted sources, updated every day.
+                            Stay informed with the latest news from trusted sources, updated every hour.
                         </p>
                     </div>
                     
@@ -203,8 +203,6 @@
                     </div>
                     
                     <!-- Feature 5 -->
-                    <!-- Not implemented yet -->
-                    {{--
                     <div class="text-center group">
                         <div class="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 dark:bg-yellow-900/30 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-200">
                             <svg class="w-8 h-8 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,10 +211,9 @@
                         </div>
                         <h3 class="text-xl font-semibold text-zinc-900 dark:text-white mb-3">Save & Organize</h3>
                         <p class="text-zinc-600 dark:text-zinc-300">
-                            Bookmark important articles and organize your reading list for later reference.
+                            Bookmark important articles or news sources and organize your reading list for later reference.
                         </p>
                     </div>
-                    --}}
                     
                     <!-- Feature 6 -->
                     <div class="text-center group">
@@ -241,7 +238,7 @@
                     Ready to See the Full Picture?
                 </h2>
                 <p class="text-lg sm:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                    Join thousands of readers who trust Balance News to provide comprehensive, unbiased news coverage.
+                    Join readers who are taking control of their news consumption.
                 </p>
                 
                 @guest
